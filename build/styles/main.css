@@ -1,0 +1,98 @@
+.mgBottom {
+  margin-bottom: 8px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Pridi;
+}
+body {
+  background-color: #3c515d;
+  color: #fcee8c;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 30px;
+}
+header .avatar {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  max-width: 96px;
+}
+li {
+  list-style: none;
+}
+.bio {
+  text-align: center;
+}
+.bio-name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.bio-sub {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.bio-txt {
+  font-size: 16px;
+  opacity: 70%;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+  margin: 0 auto;
+  width: 100%;
+}
+.social-links li img {
+  transition: all ease 0.4s;
+}
+.social-links li img:hover {
+  transform: scale(1.3);
+}
+.projects {
+  text-align: center;
+  margin-top: 40px;
+}
+.projects-item a {
+  text-decoration: none;
+  background-color: #40957f;
+  border-radius: 30px;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  color: #fcee8c;
+  font-weight: bold;
+  border: 2px solid #40957f;
+  transition: all ease 0.5s;
+  font-size: 24px;
+}
+.projects-item a:hover {
+  color: #40957f;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .projects-item a {
+    font-size: 16px;
+  }
+}
